@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    real DolarHj, Total, Reais, QuantidadeD
+    inteiro opcao
+
+    escreva("Olá, Mundo! Esse é o meu primeiro exercício da EBAC no Portugol Webstudio! Hoje é dia 16/12/2024 \n")
+    escreva("Vamos converter valores \n Caso deseje converter real -> dólar, digite 1 \n Caso contrário, digite 2 \n")
+    leia(opcao)
+    se (opcao == 2){
+      escreva("Certo! Quanto vale o dólar hoje? \n")
+      leia(DolarHj)
+      escreva("E quantos dólares você tem? \n")
+      leia(QuantidadeD)
+      Total = QuantidadeD * DolarHj
+      escreva("Parece que você tem ", Total, " reais! puxa, que inveja! ;D")
+    }
+    se(opcao == 1){
+    escreva("Certo! Quanto vale o dólar hoje? \n")
+    leia(DolarHj)
+    escreva("E quantos reais você tem? \n")
+      leia(Reais)
+      Total = Reais / DolarHj
+      escreva("Parece que você tem ", Total, " dólares! Quanto dinheiro, ein?! XD")
+    }
+
+    
+  }
+}
